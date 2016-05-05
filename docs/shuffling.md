@@ -29,7 +29,7 @@ Remember random number generation / assiging an item to an array is `O(1)`, so i
 ### Code 
 
 ```ts
-function shuffleInPlace(array: T[]) {
+function shuffleInPlace<T>(array: T[]) {
     // if it's 1 or 0 items, just return
     if (array.length <= 1) return array;
 
@@ -42,7 +42,7 @@ function shuffleInPlace(array: T[]) {
         const randomChoiceIndex = getRandom(i, array.length - 1);
 
         // place our random choice in the spot by swapping
-        var toSwapWith = array[i];
+        const toSwapWith = array[i];
         array[i] = array[randomChoiceIndex];
         arrat[randomChoiceIndex] = toSwapWith;
     }
