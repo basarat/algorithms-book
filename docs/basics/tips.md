@@ -1,6 +1,6 @@
 # General Tips
 
-* [Avoid off by one errors](avoid-off-by-one-errors.md)
+* [Avoid off by one errors](#avoid-off-by-one-errors)
 
 # Avoid off by one errors
 
