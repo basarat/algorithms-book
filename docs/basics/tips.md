@@ -20,4 +20,4 @@ function getRandom(floor:number, ceiling:number) {
 ```
 `+ floor` ensures its at least floor and then we just generate a random number between `[ 0 -- (ceiling - floor + 1) )`. 
 
-> Math.random is *pseudo-random* but good enough for most cases. For true randomness and security critical applications you need something like NodeJS `crypto`. 
+> Math.random is *pseudo-random* but good enough for most cases. For true randomness (entropy pool version) and security critical applications you need something like NodeJS `crypto`. 
