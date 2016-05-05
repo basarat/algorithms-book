@@ -8,8 +8,9 @@ Shuffling is a procedure used to randomize an array.
 
 The recommended (simple) algorithm is the `Fisher–Yates shuffle`. Its time complexity is `O(n)`. It can even be done *inplace*. 
 
-You go from `0 - (n-1)` and at each index `i` pick a random number (remember random number generation is `O(1)`) between `0` - `n-i` and move the element at the result into the `i`th location in the array. 
+You go from `0 - (n-1)` and at each index `i` pick a random number between `0` - `n-i` and move the element at the result into the `i + thisRandomNumber`th location in the array. 
 
+### Maintains Key Property
 It maintains that key property as: 
 
 ```
@@ -22,3 +23,5 @@ Probablility any item makes it into the second position
 
 ... so on
 ```
+### Has complexity `O(n)`
+Remember random number generation / assiging an item to an array is `O(1)`, so its just `n` iteration of `O(1)` 
