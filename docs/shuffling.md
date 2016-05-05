@@ -25,3 +25,28 @@ Probablility any item makes it into the second position
 ```
 ### Has complexity `O(n)`
 Remember random number generation / assiging an item to an array is `O(1)`, so its just `n` iteration of `O(1)` 
+
+### Code 
+
+```ts
+function shuffleInPlace(array: T[]) {
+    // if it's 1 or 0 items, just return
+    if (array.length <= 1) return array;
+
+    // For each index in array
+    for (let i = 0; i < array.length; i++) {
+
+        // choose a random not-yet-placed item to place there
+        // must be an item AFTER the current item, because the stuff
+        // before has all already been placed
+        const randomChoiceIndex = getRandom(i, array.length - 1);
+
+        // place our random choice in the spot by swapping
+        var toSwapWith = array[i];
+        array[i] = array[randomChoiceIndex];
+        arrat[randomChoiceIndex] = toSwapWith;
+    }
+    
+    return array;
+}
+```
