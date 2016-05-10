@@ -4,6 +4,7 @@
 * [Basics]
   * [General Tips](docs/basics/tips.md)
   * [Powers of two](docs/basics/powers-of-two.md)
+  * [Infinity](docs/basics/infinity.md)
 * [Shuffling](docs/shuffling.md) 
 * [Quiz](/docs/quiz/README.md)
   * [Palindrome](docs/quiz/palindrome.md)
