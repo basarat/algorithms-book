@@ -7,6 +7,7 @@
   * [Infinity](docs/basics/infinity.md)
 * [Data Structures]
   * [Stack](docs/datastructures/stack.md)
+  * [Queue](docs/datastructures/queue.md)
 * [Shuffling](docs/shuffling.md) 
 * [Quiz](/docs/quiz/README.md)
   * [Palindrome](docs/quiz/palindrome.md)
