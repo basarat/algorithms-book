@@ -10,5 +10,6 @@
   * [Queue](docs/datastructures/queue.md)
 * [Shuffling](docs/shuffling.md) 
 * [Quiz](/docs/quiz/README.md)
+  * [Reverse String](docs/quiz/reverse-string.md)
   * [Palindrome](docs/quiz/palindrome.md)
   * [FizzBuzz](docs/quiz/fizzbuzz.md)
