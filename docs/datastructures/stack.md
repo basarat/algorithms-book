@@ -6,11 +6,11 @@ Trivial, you just use JavaScript array `push`/`pop`. Or if you want to encapsula
 
 ```ts
 class Stack<T> {
-  _store:T[] = [];
-  push(val:T) {
+  _store: T[] = [];
+  push(val: T) {
     this._store.push(val);
   }
-  pop():T | undefined {
+  pop(): T | undefined {
     return this._store.pop();
   }
 }
