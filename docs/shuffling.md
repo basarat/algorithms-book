@@ -29,24 +29,22 @@ Remember random number generation / assiging an item to an array is `O(1)`, so i
 ### Code 
 
 ```ts
-function shuffleInPlace<T>(array: T[]) {
-    // if it's 1 or 0 items, just return
-    if (array.length <= 1) return array;
+function shuffleInPlace<T>(array: T[]): T[] {
+  // if it's 1 or 0 items, just return
+  if (array.length <= 1) return array;
 
-    // For each index in array
-    for (let i = 0; i < array.length; i++) {
+  // For each index in array
+  for (let i = 0; i < array.length; i++) {
 
-        // choose a random not-yet-placed item to place there
-        // must be an item AFTER the current item, because the stuff
-        // before has all already been placed
-        const randomChoiceIndex = getRandom(i, array.length - 1);
+    // choose a random not-yet-placed item to place there
+    // must be an item AFTER the current item, because the stuff
+    // before has all already been placed
+    const randomChoiceIndex = getRandom(i, array.length - 1);
 
-        // place our random choice in the spot by swapping
-        const toSwapWith = array[i];
-        array[i] = array[randomChoiceIndex];
-        arrat[randomChoiceIndex] = toSwapWith;
-    }
-    
-    return array;
+    // place our random choice in the spot by swapping
+    [array[i], array[randomChoiceIndex]] = [array[randomChoiceIndex], array[i]];
+  }
+
+  return array;
 }
 ```
