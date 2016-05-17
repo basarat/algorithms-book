@@ -4,7 +4,7 @@ A queue is a first in first out (FIFO) data structure.
 
 ## Implementation
 
-Trivial, just use a JavaScript array `push`/`unshift` methods. Or if you want to encapsulate it in a class:
+Trivial, just use a JavaScript array `push`/`shift` methods. Or if you want to encapsulate it in a class:
 
 ```ts
 class Queue<T> {
@@ -13,7 +13,7 @@ class Queue<T> {
     this._store.push(val);
   }
   pop(): T | undefined {
-    return this._store.unshift();
+    return this._store.shift();
   }
 }
 ```
