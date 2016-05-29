@@ -4,4 +4,4 @@ I feel that being a successful software developer requires a solid knowledge of 
 
 The code in this book should also provide idiomatic TypeScript code samples. Should should be able to see the advantages that having a Type system can bring to documenting your code.
 
-> All the code + markdown files can be [found on GitHub https://github.com/basarat/algorithms-book]
+> All the code + markdown files can be [found on GitHub](https://github.com/basarat/algorithms-book)
