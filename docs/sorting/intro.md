@@ -1,6 +1,6 @@
 # Sorting in TypeScript
 
-Given an array of `T` you are mostly best off using the built-in `sort` method. There are two warnings with this function: 
+Given an array of `T` you are mostly best off using the built-in `sort` method (`O(n Log n)`). There are two warnings with this function: 
 
 * You generally want to always provide a `compare` function **even for numbers** otherwise the default compare function is lexicographical (i.e. an alphabetical sort after doing a `toString` on each number which doesn't work well).
 * This function mutates the array in place.
